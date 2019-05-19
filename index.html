@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Agnieszka Jaskuła - Front-end developer</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio - Agnieszka Jaskuła">
+  <meta name="keywords" content="portfolio, cv, programowanie, front-end">
+  <link rel="shortcut icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Iceberg" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fontello.css"><!--fontello-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--animacje https://michalsnik.github.io/aos/-->
+  <!--BOOSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+.collapsible {
+  background-color: #474A43;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 20px; }
+
+.collapsible img {
+  width: 33%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.collapsible h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 19px 42px 0px 0px; }
+
+.active, .collapsible:hover {
+  background-color: #222; }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent; }
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .collapsible {
+    padding: 6px; }
+
+  .collapsible img {
+    width: 20%; 
+    padding-top: 14px; }
+  
+  .collapsible h3 {
+    font-size: 20px;
+    padding: 20px 42px 14px 0px; } 
+  }
+
+
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+ .collapsible img {
+    width: 0%; }
+
+ .collapsible h3 {
+    font-size: 14px;
+    padding: 13px 10px 0px 0px ; }
+  }
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  h3 {
+    padding-top: 14px;
+  }
+}
+
+
+  </style>
+
+</head>
+<body>
+  <main>
+    <!--NAWIGACJA-->
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+      
+    <nav class="nav">
+      <ul>
+        <li><a class ="nav-link" href="#start">Start</a></li>
+        <li><a class ="nav-link" href="#about">O mnie</a></li>
+        <li><a class ="nav-link" href="#portfolio">Portfolio</a></li>
+        <li><a class ="nav-link" href="#skills">Umiejętności</a></li>
+        <li><a class ="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+
+<!--HEADER-->
+  <header>
+    <div class="img_cover" id="start">
+      <div class="name" ></div>
+        <div class="name-info">
+          <h1>Agnieszka Jaskuła<br>
+              <span id="job">Front-end developer</span></h1>
+          </div>
+        </div>
+    
+      <video autoplay muted loop id="myVideo">
+          <source src="img/video.mp4" type="video/mp4">
+      </video>
+       </header>
+  </main>
+
+  <!--ABOUT-->
+  <section class="about" id="about"> 
+    <div class="about-container container-fluid">
+      <div class="about-row row">
+        <div class="col-first col-md-6">
+          <h1>O mnie</h1>
+            <p><span>Junior Front-End Developer</span> z Wrocławia szukający możliwości zdobycia doświadczenia   komercyjnego. 
+            Zainteresowanie front-endem przerodziło się w pasje której poświęcam każdą wolną chwilę pomiędzy 
+            wykonywaniem zawodu fizjoterapeuty.<br><br>
+            Moim celem jest przebranżowienie i pełne poświęcenie się front-end developmentowi.<br><br>
+            W listopadzie 2017 udało mi się dostać i ukończyć stypendium na platformie Google-Udacity. 
+            Ponadto ukończyłam wiele płatnych i bezpłatnych kursów na różnych platformach internetowych.
+            Aktualnie priorytem jest dla mnie praca i rozwój pod okiem specjalistów.
+            Jestem otwarta na współpracę zdalną i na miejscu.</p>   
+        </div>
+        
+        <div class="col-third col-md-6">
+          <div class="info-about">
+            <img src="img/wdevelopment.png">
+            <h5>Web Development</h5>
+            <p class="paragraph">
+			      Pisząc swoję strony kieruje się regułą mobile first.
+            Zwracam również uwagę, aby każda z nich była responsywna.<br> Pisząc kod staram się, aby był on w pełni czytelny i zgodny z obecnymi standardami.<br> W mojej pracy wykorzystuję: <span>HTML5, CSS3, JS, jQuery, Bootstrap4, SASS.</span></p>
+        </div>
+       
+
+     
+          <div class="info-about">
+          	<img src="img/wdesigne.png">
+          	<h5>Web Design</h5>
+            <p class="paragraph">Jakość strony w dużej mierze uzależniona jest od jej wyglądu, dlatego znaczną uwagę zwracam na kompozycje, kolor,  typografię oraz na wszystkie elementy, które wchodzą w skład layoutu strony.
+             W procesie tworzenia strony używam <span>Photoshopa.</span></p>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-contact col-md-4">
+            <p>Skontaktuj się ze mną! - <span>agnieszka.jaskula88@gmail.com</span></p>
+            <div class="social">
+             <a href="https://www.facebook.com/aga.jedrzejewska.7"><i class="icon-facebook"></i></a>
+             <a href="https://github.com/agnieszkajedrzejewska""https://www.linkedin.com/in/agnieszka-jaskula-603a57113/"><i class="icon-github-circled"></i></a>
+             <a href="https://www.linkedin.com/in/agnieszka-jaskula/"><i class="icon-linkedin"></i></a>
+            </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    
+   </div>
+ </div>
+</section>
+
+
+  <!--PORTFOLIO-->
+<section class="portfolio" id="portfolio">
+	<h1>Portfolio</h1>
+	<p>Najnowsze prace</p>
+	<div class="container1">
+ 		<img src="img/portfolio.jpg" alt="Droga w lesie" class="image1">
+  		<div class="middle1">
+    		<div class="content1">
+			    <h4>Portfolio</h4>
+			    <p>Użyte technologie: HTML5, CSS3, JS, JQUERY, BOOSTRAP, SASS, PHOTOSHOP</p>
+			    <a href="https://github.com/agnieszkajedrzejewska/Portfolio"><img src="img/github2.png" alt="Ikona website"></a>
+    		</div>
+  		</div>
+	</div>
+
+	<div class="container2">
+  		<img src="img/spa2.jpg" alt="Masaż kobiety" class="image2" >
+ 			<div class="middle2">
+    			<div class="content2">
+	    			<h4>Spa</h4>
+				    <p>Użyte technologie: HTML5, CSS3, JS, JQUERY, BOOSTRAP, PHOTOSHOP</p>
+				    <a href="https://agnieszkajedrzejewska.github.io/home/"><img src="img/website1.png" alt="Ikona website"></a>
+				    <a href="https://github.com/agnieszkajedrzejewska/Spa-One-Life"><img src="img/github2.png" alt="Ikona github"></a>
+    			</div>
+  			</div>
+	</div>
+
+	<div class="container3">
+  		<img src="img/memory-game.jpg" alt="Family guy" class="image3">
+  			<div class="middle3">
+    			<div class="content3">
+    				<h4>Memory Game</h4>
+    				<p>Użyte technologie: HTML5, CSS3, JS, PHOTOSHOP</p>
+				    <a href="https://agnieszkajedrzejewska.github.io/Memory-Game/"><img src="img/website1.png" alt="Ikona website"></a>
+            <a href="https://github.com/agnieszkajedrzejewska/Memory-Game"><img src="img/github2.png" alt="Ikona github"></a>
+    			</div>
+  			</div>
+	</div>
+
+	<div class="container4">
+  		<img src="img/architecture.jpg" alt="Biały korytarz" class="image4">
+  			<div class="middle4">
+			    <div class="content4">
+				    <h4>Architecture</h4>
+				    <p>Użyte technologie: HTML5, CSS3, JS, JQUERY, PHOTOSHOP</p>
+				    <a href="https://agnieszkajedrzejewska.github.io/Architecture/"><img src="img/website1.png" alt="Ikona website"></a>
+				    <a href="https://github.com/agnieszkajedrzejewska/Architecture"><img src="img/github2.png" alt="Ikona github"></a>
+			    </div>
+  			</div>
+	</div>
+
+	<div class="container5">
+  		<img src="img/wedding-show2.jpg" alt="Zakochana para małżeńska" class="image5">
+		 <div class="middle5">
+		    <div class="content5">
+			    <h4>Wedding Show</h4>
+			    <p>Użyte technologie: HTML5, CSS3, JS, BOOTSTRAP, PHOTOSHOP</p>
+			    <a href="https://github.com/agnieszkajedrzejewska/Wedding-Show"><img src="img/website1.png" alt="Ikona website"></a>
+          <a href="https://agnieszkajedrzejewska.github.io/Wedding-Show/"><img src="img/github2.png" alt="Ikona github"></a>
+		    </div>
+		 </div>
+	</div>
+</section>
+
+<!--SKILLS-->
+  <section class="skills" id="skills">
+    <h1>Technologie</h1>
+    <div class="container">
+        <div class="row">
+            <div class="column col-sm-4">
+                <button class="collapsible">
+                    <img src="img/html5.png" alt="logo HTML5"> 
+                    <h3>HTML</h3>
+                </button>
+                <div class="content">
+                    <div class="bar-1">
+                      <div class="bar" data-width="85%">
+                        <div class="bar-inner"></div>
+                        <div class="bar-percent">85%</div>
+                      </div>
+                    </div>
+                    <p>Strony buduję w oparciu o nowe znaczniki. Wykorzystuję je zgodnie z ich przeznaczeniem co powoduje, że kod jest bardziej czytelny i łatwiejszy w utrzymaniu.</p>
+                 </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <button class="collapsible">
+                    <img src="img/css3.png" alt="logo CSS3">
+                    <h3>CSS3</h3>
+                </button>
+                  <div class="content">
+                    <div class="bar-1">
+                      <div class="bar" data-width="80%">
+                        <div class="bar-inner"></div>
+                        <div class="bar-percent">80%</div>
+                      </div>
+                    </div>
+                    <p>W projektach wykorzystuję selektory, pseudoselektory, pseudo-klasy czy pseudo-elementy. Staram się, aby każda wykonana przeze mnie strona była responsywna.</p>
+                  </div>
+            </div>  
+
+            <div class="col-sm-4">
+                <button class="collapsible">
+                    <img src="img/js.png" alt="logo JS">
+                    <h3>JS</h3>
+                </button>
+                <div class="content">
+                    <div class="bar-1">
+                    	<div class="bar" data-width="40%">
+                        	<div class="bar-inner"></div>
+                        	<div class="bar-percent">40%</div>
+                      	</div>
+                    </div>
+                    <p>Znam typy danych, operatory, instrukcje warunkowe, pętle, tablice, wyrażenia warunkowe, obiekty oraz funkcje. Wiem jak korzystać z DOM API, aby uzyskać dostęp do elementów stron internetowych, jak je modyfikować oraz jak stworzyć stronę  reagującą na zdarzenia użytkownika. Obecnie staram się skupić na nauce tego języka. </p>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <button class="collapsible">
+                    <img src="img/jQuery.png" alt="logo jQery">
+                    <h3>JQUERY</h3>
+                </button>
+                <div class="content">
+                   	<div class="bar-1">
+                  		<div class="bar" data-width="40%">
+                     		<div class="bar-inner"></div>
+                       		<div class="bar-percent">40%</div>
+                   		</div>
+                   	</div>
+                   	<p>Umiem modyfikować DOM z jQuery, dodawać detektory zdarzeń oraz animować elementy.  Obecnie staram się skupić na nauce tej biblioteki. </p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <button class="collapsible">
+                    <img src="img/sass.png" alt="logo SASS">
+                    <h3>SASS</h3>
+                </button>
+                <div class="content">
+                    <div class="bar-1">
+                      	<div class="bar" data-width="30%">
+	                        <div class="bar-inner"></div>
+	                        <div class="bar-percent">30%</div>
+                      	</div>
+                    </div>
+                    <p>Znam podstawy sass takie jak zmienne, zagnieżdżenia, miksiny - staram się pogłebiać wiedzę.
+</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <button class="collapsible">
+                    <img src="img/git.png" alt="logo git">
+                    <h3>GIT</h3>
+                </button>
+                <div class="content">
+                    <div class="bar-1">
+                      	<div class="bar" data-width="40%">
+                        	<div class="bar-inner"></div>
+                        	<div class="bar-percent">40%</div>
+                      	</div>
+                    </div>
+                    <p>Wiem jak stworzyć repozytorium i dodać je na github.com - gdzie wykorzystuję darmowy hosting do stron internetowych.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <button class="collapsible">
+                    <img src="img/bootstrap.png" alt="logo bootstrap">
+                    <h3>BOOTSTRAP</h3>
+                </button>
+                <div class="content">
+                  	<div class="bar-1">
+                   		<div class="bar" data-width="60%">
+	                       	<div class="bar-inner"></div>
+	                       	<div class="bar-percent">60%</div>
+                   		</div>
+                   	</div>
+                   	<p>Znam nazwy klas i przypisuję je do elementów strony, a samą stronę piszę z wykorzystaniem wbudowanego grida.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <button class="collapsible">
+                    <img src="img/wordpress.png" alt="logo wordpress">
+                    <h3>WORDPRESS</h3>
+                </button>
+                <div class="content">
+                    <div class="bar-1">
+                      	<div class="bar" data-width="60%">
+                        	<div class="bar-inner"></div>
+                        	<div class="bar-percent">60%</div>
+                      	</div>
+                    </div>
+                    <p>Wiem jak stworzyć strone w Wordpressie, jak ją modyfikować oraz jak zainstalować pluginy. W przyszłość mam zamiar pogłębić wiedzę jak przekształcić stronę w działający sklep internetowy - poprzez plugin WooCommerce.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <button class="collapsible">
+                    <img src="img/photoshop.png" alt="logo photoshop">
+                    <h3>PHOTOSHOP</h3>
+                </button>
+                <div class="content">
+                    <div class="bar-1">
+                      	<div class="bar" data-width="40%">
+                        	<div class="bar-inner"></div>
+                        	<div class="bar-percent">40%</div>
+                      	</div>
+                    </div>
+                    <p>Modyfikuję zdjęcia i ilustracje na potrzeby projektu. Potrafię ciąć szablony.</p>
+                </div>
+            </div>
+    	</div>
+    </div>
+</section>
+
+  <footer>
+    <div class="contact container" id="contact">
+      <h1>Kontakt</h1>
+      <div class="row">
+        <div class="col-info col-md-6">
+          <h5><i class="icon-user"></i><span>Agnieszka Jaskuła</span></h5>
+          <h5><i class="icon-mail"></i>agnieszka.jaskula88@gmail.com</h5>
+          <h5><i class="icon-phone-circled"></i>607433723</h5>
+          <h5> <a href="https://www.linkedin.com/in/agnieszka-jaskula-603a57113/"><i class="icon-linkedin"></i>Linkedin</a></h5>
+        </div>
+     
+        <div class=" col-md-6">
+             <div id="map"></div>
+        </div>
+      </div>
+
+      <div class="rodo">
+        <p>Wyrażam zgodę na przetwarzanie danych osobowych zawartych w niniejszym dokumencie do realizacji procesu rekrutacji zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+        <hr>
+        <p><span> Copyright &copy 2019, All Rights Reserved - Agnieszka Jaskuła</span></p>
+      </div>
+    
+  </footer>
+
+
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/walidacja.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+    //mapa google
+          function initMap() {
+            var location = {lat: 51.075420, lng: 16.992270};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: location
+            });
+            var marker = new google.maps.Marker ({
+                position: location,
+                map: map
+            });
+          }
+    
+    //jQuery 
+      $("#job").hide();
+    
+        $("#job").fadeIn(3000);
+      ;
+
+    //collapse
+           var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        //Skill bar
+        $(".bar").each(function(){
+        $(this).find(".bar-inner").animate({
+        width: $(this).attr("data-width")
+          },2000)
+          });
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARPuxeAvMfOufIMQeCzGFvFpwhLLmvgWM&callback=initMap"></script>
+</body>
+</html>
